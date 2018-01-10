@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'HTAnimation_Example' do
+  pod 'HTAnimation', :path => '../'
+
+  target 'HTAnimation_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
