@@ -1,0 +1,6 @@
+framework module HTAnimation {
+  umbrella header "HTAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

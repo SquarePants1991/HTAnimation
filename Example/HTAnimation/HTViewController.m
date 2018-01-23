@@ -7,8 +7,14 @@
 //
 
 #import "HTViewController.h"
+#import "HTCard.h"
+#import <HTAnimation/CALayer+HTPropertyAnimation.h>
 
-@interface HTViewController ()
+#define RAD(degree) (degree * M_PI / 180.0)
+
+@interface HTViewController () {
+    UIView *animView;
+}
 
 @end
 
@@ -17,13 +23,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    animView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    animView.backgroundColor = UIColor.redColor;
+    [self.view addSubview:animView];
+    [animView.layer ht_property:@"transform.scale" animateTo:@(0.5) complete:^(BOOL finished) {
+        
+    }];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
