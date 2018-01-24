@@ -10,7 +10,14 @@
 #endif
 #endif
 
+#import "HTAnimationChain+HTConfigAction.h"
+#import "HTAnimationChain+HTPropertyChangeAction.h"
+#import "HTAnimationChain+HTTransformAnimation.h"
+#import "CALayer+HTAnimationChain.h"
+#import "UIView+HTAnimationChain.h"
 #import "CALayer+HTPropertyAnimation.h"
+#import "HTAnimation.h"
+#import "HTAnimationChain.h"
 
 FOUNDATION_EXPORT double HTAnimationVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTAnimationVersionString[];

@@ -6,8 +6,8 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import "HTAnimation.h"
 
-typedef void(^HTAnimationCompleteHandler)(BOOL finished);
 
 @interface CABasicAnimation (HTAnimationInfo)
 @property (nonatomic, copy) HTAnimationCompleteHandler completeHandler;
@@ -16,6 +16,6 @@ typedef void(^HTAnimationCompleteHandler)(BOOL finished);
 
 @interface CALayer (HTPropertyAnimation)
 - (void)ht_property:(NSString *)keyPath animateTo:(NSValue *)toValue complete:(HTAnimationCompleteHandler)complete;
-- (void)ht_property:(NSString *)keyPath animateBy:(NSValue *)byValue complete:(HTAnimationCompleteHandler)complete;
 - (void)ht_property:(NSString *)keyPath animateFrom:(NSValue *)fromValue animateTo:(NSValue *)toValue complete:(HTAnimationCompleteHandler)complete;
+- (HTAnimation *)ht_animationWithProperty:(NSString *)keyPath animateFrom:(NSValue *)fromValue animateTo:(NSValue *)toValue;
 @end
