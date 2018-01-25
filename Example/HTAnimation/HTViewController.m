@@ -69,5 +69,9 @@
     animView.ht_anim
             .duration(1.5).propertyTo(@"transform.rotation", @(M_PI * 3))
             .run();
+    
+    NSValue *a = @(2);
+    NSValue *b = @(2);
+    a = [a valueByAdding:b];
 }
 @end
