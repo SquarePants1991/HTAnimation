@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^HTAnimationCompleteHandler)(BOOL finished);
-typedef NSValue *(^HTAnimationTimingFunction)(NSValue *begin, NSValue *end, CGFloat timeFactor);
+typedef double (^HTAnimationTimingFunction)(double timeFactor);
 
 @interface HTAnimation : NSObject
 @property (nonatomic, strong) NSValue *fromValue;

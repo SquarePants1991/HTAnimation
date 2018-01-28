@@ -6,7 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HTMathOperations.h"
 
 @interface NSValue (HTMath)
-- (NSValue *)valueByAdding:(NSValue *)other;
+- (NSValue *)valueByAdd:(NSValue *)other;
+- (NSValue *)valueBySub:(NSValue *)other;
+- (NSValue *)valueByMul:(NSValue *)other;
+- (NSValue *)valueByDiv:(NSValue *)other;
+- (NSValue *)valueByMulScalar:(double)scalar;
+- (NSValue *)valueByOperation:(HTMathOperation)operation val:(NSValue *)other;
 @end

@@ -18,6 +18,9 @@
 #import "CALayer+HTPropertyAnimation.h"
 #import "HTAnimation.h"
 #import "HTAnimationChain.h"
+#import "HTAnimationTimingFunctions.h"
+#import "HTMathOperations.h"
+#import "NSNumber+HTMath.h"
 #import "NSValue+HTMath.h"
 
 FOUNDATION_EXPORT double HTAnimationVersionNumber;
