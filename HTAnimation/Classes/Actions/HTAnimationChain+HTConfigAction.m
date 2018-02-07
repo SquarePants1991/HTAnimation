@@ -20,6 +20,13 @@
     };
 }
 
+- (HTAnimationIntegerSetActionExecuteBlock)repeat {
+    return ^(NSInteger repeatCount) {
+        self.currentConfigAnimation.repeatCount = repeatCount;
+        return self;
+    };
+}
+
 - (HTAnimationTimingFuncSetExecuteBlock)timingFunc {
     return ^(HTAnimationTimingFunction timingFunc) {
         self.currentConfigAnimation.timingFunction = timingFunc;

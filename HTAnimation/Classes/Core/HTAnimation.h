@@ -8,13 +8,14 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^HTAnimationCompleteHandler)(BOOL finished);
-typedef NSValue *(^HTAnimationTimingFunction)(NSValue *begin, NSValue *end, CGFloat timeFactor);
+typedef double (^HTAnimationTimingFunction)(double timeFactor);
 
 @interface HTAnimation : NSObject
 @property (nonatomic, strong) NSValue *fromValue;
 @property (nonatomic, strong) NSValue *toValue;
 @property (nonatomic, copy) NSString *keyPath;
 @property (nonatomic, assign) NSTimeInterval duration;
+@property (nonatomic, assign) NSInteger repeatCount;
 @property (nonatomic, assign) NSTimeInterval delay;
 @property (nonatomic, copy) HTAnimationTimingFunction timingFunction;
 @property (nonatomic, copy) HTAnimationCompleteHandler completedHookHandler;

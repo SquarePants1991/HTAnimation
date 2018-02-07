@@ -6,6 +6,7 @@
 //
 
 #import "HTAnimation.h"
+#import "NSValue+HTMath.h"
 
 @interface HTAnimation () <CAAnimationDelegate> {
     @private
@@ -38,6 +39,7 @@
 - (void)setupDefaultParams {
     _duration = 0.25;
     _delay = 0.0;
+    _repeatCount = 0;
 }
 
 - (void)startWithComplete:(HTAnimationCompleteHandler)complete {
@@ -55,6 +57,7 @@
     target.duration = self.duration;
     target.delay = self.delay;
     target.timingFunction = self.timingFunction;
+    target.repeatCount = self.repeatCount;
 }
 
 #pragma mark - Animation Delegate
@@ -87,13 +90,17 @@
         NSMutableArray *times = [NSMutableArray new];
         NSMutableArray *values = [NSMutableArray new];
         while (currentFrameTime < self.duration) {
-            float timeFactor = currentFrameTime / self.duration;
-            id value = self.timingFunction(beginValue, endValue, timeFactor);
+            double timeFactor = currentFrameTime / self.duration;
+            double newTimeFactor = self.timingFunction(timeFactor);
+            NSValue *delta = [endValue valueBySub:beginValue];
+            NSValue *value = [[delta valueByMulScalar:newTimeFactor] valueByAdd:beginValue];
             [values addObject:value];
             [times addObject:@(timeFactor)];
             currentFrameTime += frameDuration;
         }
-        id value = self.timingFunction(beginValue, endValue, 1.0);
+        double timeFactor = self.timingFunction(1.0);
+        NSValue *delta = [endValue valueBySub:beginValue];
+        NSValue *value = [[delta valueByMulScalar:timeFactor] valueByAdd:beginValue];
         [values addObject:value];
         [times addObject:@(1)];
 
@@ -106,6 +113,7 @@
         basicAnimation.toValue = endValue;
         animation = basicAnimation;
     }
+    animation.repeatCount = self.repeatCount;
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;
     animation.duration = self.duration;

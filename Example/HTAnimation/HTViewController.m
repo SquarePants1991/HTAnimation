@@ -49,29 +49,44 @@
 //    animView.ht_anim.delay(1.2).duration(10.0).propertyTo(@"transform.rotation", @(8 * M_PI)).run();
 
 
-    animView.ht_anim.delay(0.0).duration(0.4).propertyTo(@"position", [NSValue valueWithCGPoint:CGPointMake(100, 100)]).run();
+//    animView.ht_anim.delay(0.0).duration(0.4).propertyTo(@"position", [NSValue valueWithCGPoint:CGPointMake(100, 100)]).run();
+//    animView.ht_anim
+//            .delay(1.0)
+//            .duration(2.4)
+//            .timingFunc(kHTAnimationTimingFunctionLinear)
+//            .propertyTo(@"bounds", [NSValue valueWithCGRect:CGRectMake(0, 0, 200, 200)]).run();
+//    animView.ht_anim
+//            .duration(0.5).propertyTo(@"opacity", @0.5)
+//            .duration(1.5).propertyTo(@"opacity", @1.0)
+//            .run();
     animView.ht_anim
-            .delay(1.0)
-            .duration(2.4)
-            .timingFunc(^(NSValue *begin, NSValue *end, CGFloat timeFactor) {
-                CGRect beginPt = [begin CGRectValue];
-                CGRect endPt = [end CGRectValue];
-                CGPoint delta = CGPointMake(endPt.size.width - beginPt.size.width, endPt.size.height- beginPt.size.height);
-                timeFactor = sin(timeFactor * M_PI * 10 + M_PI / 2) * 0.4;
-                CGRect pt = CGRectMake(0, 0, delta.x * timeFactor + beginPt.size.width, delta.y * timeFactor + beginPt.size.height);
-                return [NSValue valueWithCGRect:pt];
-            })
-            .propertyTo(@"bounds", [NSValue valueWithCGRect:CGRectMake(0, 0, 200, 200)]).run();
-    animView.ht_anim
-            .duration(0.5).propertyTo(@"opacity", @0.5)
-            .duration(1.5).propertyTo(@"opacity", @1.0)
+            .scaleTo(2,2)
+            .scaleXTo(1)
+            .scaleYTo(1)
             .run();
-    animView.ht_anim
-            .duration(1.5)
-            .propertyTo(@"transform.rotation", @(M_PI * 3))
-            .then(^(BOOL flag) {
-                NSLog(@"transform.rotation finish");
-            })
-            .run();
+#define AnimationScope(Name)
+//    animView.ht_anim
+//                    AnimationScope(CrossFade)
+//            .duration(0.5)
+//            .timingFunc(^(double timeFactor) {
+//                return sin(timeFactor * M_PI);
+//            })
+//            .repeat(1)
+//            .propertyTo(@"opacity", @(0.0))
+//            .then(^(BOOL flag) {
+//                NSLog(@"transform.rotation finish");
+//            })
+//                    AnimationScope(Move)
+//            .duration(0.25)
+//            .moveXTo(100)
+//            .duration(0.25)
+//            .moveYTo(100)
+//            .moveXTo(0)
+//            .moveXTo(200)
+//            .moveYTo(300)
+//            .scaleTo(2,2)
+//            .scaleXTo(1)
+//            .scaleYTo(1)
+//            .run();
 }
 @end
