@@ -62,6 +62,9 @@
     if (_completeHandler) {
         _completeHandler(flag);
     }
+    if (self.completedHookHandler) {
+        self.completedHookHandler(flag);
+    }
 }
 
 #pragma mark - Prepare CAAnimation

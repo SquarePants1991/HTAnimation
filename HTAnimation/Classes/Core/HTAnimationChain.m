@@ -36,6 +36,10 @@
     return _currentConfigAnimation;
 }
 
+- (HTAnimation *)currentAnimation {
+    return _animations.lastObject;
+}
+
 - (HTAnimationRunBlock)run {
     return ^(){
         [self peekAndRunAnimation];

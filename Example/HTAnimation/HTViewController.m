@@ -67,7 +67,11 @@
             .duration(1.5).propertyTo(@"opacity", @1.0)
             .run();
     animView.ht_anim
-            .duration(1.5).propertyTo(@"transform.rotation", @(M_PI * 3))
+            .duration(1.5)
+            .propertyTo(@"transform.rotation", @(M_PI * 3))
+            .then(^(BOOL flag) {
+                NSLog(@"transform.rotation finish");
+            })
             .run();
 }
 @end

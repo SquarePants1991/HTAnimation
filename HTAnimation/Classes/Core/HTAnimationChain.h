@@ -11,6 +11,7 @@ typedef void(^HTAnimationRunBlock)();
 @property (nonatomic, strong) CALayer *hostLayer;
 @property (nonatomic, copy) HTAnimationRunBlock run;
 @property (nonatomic, strong) HTAnimation *currentConfigAnimation;
+@property (nonatomic, strong) HTAnimation *currentAnimation;
 
 - (instancetype)initWithHostLayer:(CALayer *)hostLayer;
 - (void)addAnimation:(HTAnimation *)animation;

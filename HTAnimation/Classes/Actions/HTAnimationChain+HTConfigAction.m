@@ -26,4 +26,11 @@
         return self;
     };
 }
+
+- (HTAnimationCompleteCallbackSetActionExecuteBlock)then {
+    return ^(void(^completed)(BOOL)) {
+        self.currentAnimation.completedHookHandler = completed;
+        return self;
+    };
+}
 @end

@@ -8,9 +8,12 @@
 
 typedef HTAnimationChain *(^HTAnimationTimeSetActionExecuteBlock)(NSTimeInterval delay);
 typedef HTAnimationChain *(^HTAnimationTimingFuncSetExecuteBlock)(HTAnimationTimingFunction timingFunc);
+typedef HTAnimationChain *(^HTAnimationCompleteCallbackSetActionExecuteBlock)(void(^completed)(BOOL));
 
 @interface HTAnimationChain (HTConfigAction)
 @property (nonatomic, copy) HTAnimationTimeSetActionExecuteBlock delay;
 @property (nonatomic, copy) HTAnimationTimeSetActionExecuteBlock duration;
 @property (nonatomic, copy) HTAnimationTimingFuncSetExecuteBlock timingFunc;
+@property (nonatomic, copy) HTAnimationCompleteCallbackSetActionExecuteBlock then;
+
 @end

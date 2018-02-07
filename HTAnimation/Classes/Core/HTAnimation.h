@@ -17,6 +17,7 @@ typedef NSValue *(^HTAnimationTimingFunction)(NSValue *begin, NSValue *end, CGFl
 @property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, assign) NSTimeInterval delay;
 @property (nonatomic, copy) HTAnimationTimingFunction timingFunction;
+@property (nonatomic, copy) HTAnimationCompleteHandler completedHookHandler;
 
 - (instancetype)initWithHostLayer:(CALayer *)layer keyPath:(NSString *)keyPath;
 - (void)startWithComplete:(HTAnimationCompleteHandler)complete;
