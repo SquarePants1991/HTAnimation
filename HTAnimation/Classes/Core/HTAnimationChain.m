@@ -4,6 +4,7 @@
 
 #import "HTAnimationChain.h"
 #import "HTAnimation.h"
+#import "HTAnimationGroup.h"
 
 @interface HTAnimationChain () {
 @private
@@ -23,7 +24,7 @@
 
 - (void)addAnimation:(HTAnimation *)animation {
     if (_currentConfigAnimation != nil) {
-        [_currentConfigAnimation mergeTo:animation];
+        [animation mergeFrom:_currentConfigAnimation];
         _currentConfigAnimation = nil;
     }
     [_animations addObject:animation];

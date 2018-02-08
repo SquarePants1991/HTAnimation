@@ -11,6 +11,7 @@ typedef void(^HTAnimationCompleteHandler)(BOOL finished);
 typedef double (^HTAnimationTimingFunction)(double timeFactor);
 
 @interface HTAnimation : NSObject
+@property (nonatomic, strong) CALayer *hostLayer;
 @property (nonatomic, strong) NSValue *fromValue;
 @property (nonatomic, strong) NSValue *toValue;
 @property (nonatomic, copy) NSString *keyPath;
@@ -22,5 +23,6 @@ typedef double (^HTAnimationTimingFunction)(double timeFactor);
 
 - (instancetype)initWithHostLayer:(CALayer *)layer keyPath:(NSString *)keyPath;
 - (void)startWithComplete:(HTAnimationCompleteHandler)complete;
-- (void)mergeTo:(HTAnimation *)target;
+- (void)mergeFrom:(HTAnimation *)target;
+- (CAAnimation *)prepareCAAnimation;
 @end

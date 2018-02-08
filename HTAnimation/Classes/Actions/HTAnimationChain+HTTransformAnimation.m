@@ -5,6 +5,7 @@
 #import "HTAnimationChain+HTTransformAnimation.h"
 #import "CALayer+HTPropertyAnimation.h"
 #import "HTAnimation.h"
+#import "HTAnimationGroup.h"
 
 @implementation HTAnimationChain (HTTransformAnimation)
 - (HTTransformAnimationTwoCGFloatExecuteBlock)moveTo {
@@ -39,9 +40,8 @@
     HTTransformAnimationTwoCGFloatExecuteBlock executeBlock = ^(CGFloat x, CGFloat y) {
         HTAnimation *animationX = [self.hostLayer ht_animationWithProperty:@"transform.scale.x" animateFrom:nil animateTo:@(x)];
         HTAnimation *animationY = [self.hostLayer ht_animationWithProperty:@"transform.scale.y" animateFrom:nil animateTo:@(y)];
-
-        [self addAnimation:animationX];
-        [self addAnimation:animationY];
+        HTAnimationGroup *animationGroup = [HTAnimationGroup animationGroupWithAnimations:@[animationX, animationY]];
+        [self addAnimation:animationGroup];
         return self;
     };
     return executeBlock;

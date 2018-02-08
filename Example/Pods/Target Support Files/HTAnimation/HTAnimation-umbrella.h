@@ -18,6 +18,7 @@
 #import "CALayer+HTPropertyAnimation.h"
 #import "HTAnimation.h"
 #import "HTAnimationChain.h"
+#import "HTAnimationGroup.h"
 #import "HTAnimationTimingFunctions.h"
 #import "HTMathOperations.h"
 #import "NSNumber+HTMath.h"

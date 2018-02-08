@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="998361a9-0cd4-4250-9af5-06460b62d872" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationTimingFunctions.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/NSValueCaculate/HTMathOperations.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/NSValueCaculate/NSNumber+HTMath.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/NSValueCaculate/NSNumber+HTMath.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/NSValueCaculate/NSValue+HTMath.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/NSValueCaculate/NSValue+HTMath.m" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HTAnimation/HTViewController.m" afterPath="$PROJECT_DIR$/HTAnimation/HTViewController.m" />
       <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
       <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/HTAnimation/HTAnimation-umbrella.h" afterPath="$PROJECT_DIR$/Pods/Target Support Files/HTAnimation/HTAnimation-umbrella.h" />
-      <change beforePath="$PROJECT_DIR$/Tests/Tests.m" afterPath="$PROJECT_DIR$/Tests/Tests.m" />
-      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTConfigAction.h" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTConfigAction.h" />
-      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTConfigAction.m" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTConfigAction.m" />
-      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.h" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.h" />
       <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.m" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.m" />
       <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.h" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.h" />
       <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.m" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.m" />
+      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.m" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.m" />
+      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h" />
+      <change beforePath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m" afterPath="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/HTAnimation-afvwcphlvaussubojmocksoajqwx/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +21,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_adca1f431a461aa82085e97cfbd5472e27b39a2f" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_BCE17A7E-2948-47A0-99F6-1EBCB8DDE0E5" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="HTAnimationChain.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="458">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#69#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTAnimationGroup.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m">
+      <file leaf-file-name="HTAnimationChain.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -54,11 +46,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTAnimationGroup.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HTAnimation.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTAnimation.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTAnimationChain+HTTransformAnimation.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="42" column="67" lean-forward="false" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+              <folding>
+                <element signature="e#41#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTAnimationGroup.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTViewController.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTAnimation/HTViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTAnimationChain+HTTransformAnimation.h" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/HTAnimation-afvwcphlvaussubojmocksoajqwx/Build/Products/Debug-iphoneos/HTAnimation/HTAnimation.framework/Headers/HTAnimationChain+HTTransformAnimation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="15" column="71" lean-forward="false" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CAAnimation.h" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="328" column="11" lean-forward="false" selection-start-line="328" selection-start-column="11" selection-end-line="328" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTAnimationGroup.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -69,15 +133,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.m" />
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h" />
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.m" />
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.h" />
+        <option value="$PROJECT_DIR$/HTAnimation/HTViewController.m" />
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.m" />
+        <option value="$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-45" />
-    <option name="y" value="416" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1436" />
     <option name="height" value="877" />
   </component>
@@ -104,6 +181,11 @@
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="HTAnimation" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="HTAnimation" type="1d218c8b:XcodeProjectNode" />
+              <item name="Example for HTAnimation" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -169,35 +251,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518002923095</updated>
-      <workItem from="1518002926376" duration="257000" />
+      <workItem from="1518002926376" duration="739000" />
+      <workItem from="1518059292127" duration="3047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257000" />
+    <option name="totallyTimeSpent" value="3786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32084805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11892583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35549873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -208,7 +292,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="10" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -216,7 +302,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#41#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -230,8 +318,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="328" column="11" lean-forward="false" selection-start-line="328" selection-start-column="11" selection-end-line="328" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTAnimation/HTViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xcode/DerivedData/HTAnimation-afvwcphlvaussubojmocksoajqwx/Build/Products/Debug-iphoneos/HTAnimation/HTAnimation.framework/Headers/HTAnimationChain+HTTransformAnimation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="71" lean-forward="false" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationChain.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Actions/HTAnimationChain+HTTransformAnimation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="42" column="67" lean-forward="false" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+          <folding>
+            <element signature="e#41#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HTAnimation/Classes/Core/HTAnimationGroup.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="20" />
           <folding />
         </state>
       </provider>

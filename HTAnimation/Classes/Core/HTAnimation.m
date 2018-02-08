@@ -53,11 +53,11 @@
     }
 }
 
-- (void)mergeTo:(HTAnimation *)target {
-    target.duration = self.duration;
-    target.delay = self.delay;
-    target.timingFunction = self.timingFunction;
-    target.repeatCount = self.repeatCount;
+- (void)mergeFrom:(HTAnimation *)from {
+    self.duration = from.duration;
+    self.delay = from.delay;
+    self.timingFunction = from.timingFunction;
+    self.repeatCount = from.repeatCount;
 }
 
 #pragma mark - Animation Delegate
