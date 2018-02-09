@@ -8,10 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HTCardLayer : CALayer
-@property (assign, nonatomic) CGFloat rotateX;
-@property (assign, nonatomic) CATransform3D customMatrix;
-@end
-
 @interface HTCard : UIView
 @end

@@ -7,6 +7,8 @@
 
 @interface HTAnimationGroup : HTAnimation
 @property (nonatomic, strong) NSArray<HTAnimation *> *animations;
+@property (nonatomic, assign) BOOL animationsSyncWithGroup;
+
 + (HTAnimationGroup *)animationGroupWithAnimations:(NSArray<HTAnimation *> *)animations;
 - (void)mergeFrom:(HTAnimation *)from;
 @end
