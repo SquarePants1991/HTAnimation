@@ -9,11 +9,12 @@
 #import "HTViewController.h"
 #import "HTCard.h"
 @import HTAnimation;
+#import <HTAnimation/HTAnimationChain+HTTransformAnimation.h>
 
 #define RAD(degree) (degree * M_PI / 180.0)
 
 @interface HTViewController () {
-    UIView *animView;
+    HTCard *animView;
 }
 
 @end
@@ -24,7 +25,7 @@
 {
     [super viewDidLoad];
     
-    animView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    animView = [[HTCard alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     animView.backgroundColor = UIColor.redColor;
     [self.view addSubview:animView];
 //    animView.ht_anim
@@ -59,9 +60,38 @@
 //            .duration(0.5).propertyTo(@"opacity", @0.5)
 //            .duration(1.5).propertyTo(@"opacity", @1.0)
 //            .run();
-    animView.ht_anim
+//    animView.ht_anim
 //            .moveTo(200, 200)
-            .scaleTo(2,2)
+//            .duration(0.4)
+//            .delay(1)
+//            .timingFunc(^(double timeFactor) {
+//                return pow(timeFactor, 2.0);
+//            })
+//            .scaleTo(2,2)
+//            .duration(1)
+//            .rotateTo(360)
+//            .duration(1)
+//            .rotateToAroundX(360)
+//            .duration(1)
+//            .rotateToAroundY(360)
+//            .scaleXTo(0.4)
+//            .scaleYTo(0.2)
+//            .run();
+    animView.ht_anim
+            .moveTo(100, 100)
+            .delay(1)
+            .duration(1)
+            .timingFunc(^(double timeFactor) {
+                return pow(timeFactor, 0.8);
+            })
+            .repeat(10)
+            .rotateToAroundX3D(360)
+            .then(^(BOOL flag) {
+                [(HTPerspectiveTransformLayer *)animView.layer setPerspectiveFactor:1.0 / -200.0];
+            })
+            .duration(1.2)
+            .rotateToAroundY3D(230)
+            .scaleTo(1.5,1.2)
             .run();
 #define AnimationScope(Name)
 //    animView.ht_anim
