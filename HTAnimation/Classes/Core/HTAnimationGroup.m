@@ -37,9 +37,9 @@
     }
     animationGroup.animations = caAnimations;
 //    animationGroup.repeatCount = self.repeatCount;
-//    animationGroup.fillMode = kCAFillModeForwards;
+    animationGroup.fillMode = kCAFillModeForwards;
     animationGroup.removedOnCompletion = NO;
-    animationGroup.duration = 2.0;//self.duration;
+    animationGroup.duration = 3.0;//self.duration;
 //    animationGroup.beginTime = CACurrentMediaTime() + self.delay;
     animationGroup.delegate = self;
     return animationGroup;

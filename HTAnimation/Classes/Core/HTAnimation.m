@@ -48,8 +48,7 @@
         _completeHandler = complete;
     }
     if (_hostLayer) {
-        NSTimeInterval keyTime = [[NSDate date] timeIntervalSince1970];
-        [_hostLayer addAnimation:_caAnimation forKey:[NSString stringWithFormat:@"%lf", keyTime]];
+        [_hostLayer addAnimation:_caAnimation forKey:nil];
     }
 }
 
@@ -118,7 +117,7 @@
     animation.removedOnCompletion = NO;
     animation.duration = self.duration;
     animation.beginTime = CACurrentMediaTime() + self.delay;
-    animation.delegate = self;
+//    animation.delegate = self;
     return animation;
 }
 @end

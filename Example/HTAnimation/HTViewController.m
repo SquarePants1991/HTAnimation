@@ -60,10 +60,8 @@
 //            .duration(1.5).propertyTo(@"opacity", @1.0)
 //            .run();
     animView.ht_anim
-            .moveTo(200, 200)
+//            .moveTo(200, 200)
             .scaleTo(2,2)
-            .scaleXTo(0.4)
-            .scaleYTo(0.2)
             .run();
 #define AnimationScope(Name)
 //    animView.ht_anim
